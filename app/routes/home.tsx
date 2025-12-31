@@ -27,7 +27,7 @@ export default function Home() {
               <ResumeCard key={resume.id} resume={resume}/>
           ))}
         </div>
-    )}]
+    )}
     </section>
 
   </main>
