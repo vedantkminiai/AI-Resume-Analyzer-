@@ -2,7 +2,7 @@ import Navbar from "~/components/Navbar";
 import {type FormEvent, useState} from "react";
 
 const Upload = () => {
-    const [isProcessing, setIsProcessing] = useState(true);
+    const [isProcessing, setIsProcessing] = useState(false);
     const [statusText, setStatusText] = useState("");
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {}
@@ -36,6 +36,15 @@ const Upload = () => {
                                 <label htmlFor={"job-description"}>Job Description</label>
                                 <textarea rows={5} name={"job-description"} placeholder={"Job Description"}></textarea>
                             </div>
+
+                            <div className={"form-div"}>
+                                <label htmlFor={"uploader"}>Upload Resume</label>
+                                <div>Uploader</div>
+                            </div>
+
+                            <button className={"primary-button"} type={"submit"}>
+                                Analyze Resume
+                            </button>
                         </form>
                     )}
                 </div>
