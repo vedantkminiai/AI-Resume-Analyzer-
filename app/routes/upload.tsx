@@ -20,7 +20,7 @@ const Upload = () => {
                             <img src={"https://assets-v2.lottiefiles.com/a/ced36716-1166-11ee-b705-c73b447c5bbc/EbURfnFs7V.gif"} className={"w-full"}/>
                         </>
                     ) : (
-                        <h2>Drop your resume for an ATS score and improvement tips</h2>
+                        <h2>Drop your resume for an ATS score and improvement tips today</h2>
                     )}
                     {!isProcessing && (
                         <form id={"upload-form"} onSubmit={handleSubmit} className={"flex flex-col gap-4 mt-8"}>
