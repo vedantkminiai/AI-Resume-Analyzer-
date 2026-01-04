@@ -6,7 +6,11 @@ const Upload = () => {
     const [isProcessing, setIsProcessing] = useState(false);
     const [statusText, setStatusText] = useState("");
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {}
+
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+
+    }
 
     return (
         <main className="bg-[url('/images/bg-main.svg')] bg-cover">
