@@ -7,6 +7,9 @@ const Upload = () => {
     const [statusText, setStatusText] = useState("");
     const [file, setFile] = useState<File | null>(null);
 
+    const handleFileSelect = (file: File | null) => {
+        setFile(file);
+    }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 
@@ -14,7 +17,7 @@ const Upload = () => {
 
     return (
         <main className="bg-[url('/images/bg-main.svg')] bg-cover">
-            <Navbar/>
+            <Navbar />
 
             <section className={"main-section"}>
                 <div className={"page-heading py-16"}>
@@ -44,7 +47,7 @@ const Upload = () => {
 
                             <div className={"form-div"}>
                                 <label htmlFor={"uploader"}>Upload Resume</label>
-                                <FileUploader />
+                                <FileUploader onFileSelect={handleFileSelect} />
                             </div>
 
                             <button className={"primary-button"} type={"submit"}>
