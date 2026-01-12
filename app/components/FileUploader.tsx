@@ -32,9 +32,6 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                 <input {...getInputProps()} />
 
                 <div className={"space-y-4 cursor-pointer"}>
-                    <div className={"mx-auto w-16 h-16 flex items-center justify-center"}>
-                        <img src={"https://cdn.pixabay.com/photo/2017/03/17/05/21/info-2150941_1280.png"} alt={"upload"} className={"size-20"} />
-                    </div>
 
                     {file ? (
                             <div className={"uploader-selected-file"} onClick={(e) => e.stopPropagation()}>
@@ -49,9 +46,17 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                                         </p>
                                     </div>
                                 </div>
+                                <button className={"p-2 cursor-pointer"} onClick={(e) => {
+                                    onFileSelect?.(null)
+                                }}>
+                                    <img src="/icons/cross.svg" alt="remove" className="w-4 h-4" />
+                                </button>
                             </div>
                     ) : (
                         <div>
+                            <div className={"mx-auto w-16 h-16 flex items-center justify-center mb-2 "}>
+                                <img src={"https://cdn.pixabay.com/photo/2017/03/17/05/21/info-2150941_1280.png"} alt={"upload"} className={"size-20"} />
+                            </div>
                             <p className={"text-lg text-gray-500"}>
                                 <span className={"font-semibold"}>
                                     Click to upload
