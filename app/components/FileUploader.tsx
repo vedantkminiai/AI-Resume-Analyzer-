@@ -35,7 +35,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
 
                     {file ? (
                             <div className={"uploader-selected-file"} onClick={(e) => e.stopPropagation()}>
-                                <img src={"/images/pdf.png"} alt={"pdf"} className={"size-10"} />
+                                <img src={"https://cdn-icons-png.flaticon.com/512/4726/4726010.png"} alt={"pdf"} className={"size-10"} />
                                 <div className={"flex items-center space-x-3"}>
                                     <div>
                                         <p className={"text-sm font-medium text-gray-700 truncate max-w-xs"}>
@@ -55,7 +55,7 @@ const FileUploader = ({ onFileSelect }: FileUploaderProps) => {
                     ) : (
                         <div>
                             <div className={"mx-auto w-16 h-16 flex items-center justify-center mb-2 "}>
-                                <img src={"https://cdn.pixabay.com/photo/2017/03/17/05/21/info-2150941_1280.png"} alt={"upload"} className={"size-20"} />
+                                <img src={"https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/information.png"} alt={"upload"} className={"size-20"} />
                             </div>
                             <p className={"text-lg text-gray-500"}>
                                 <span className={"font-semibold"}>

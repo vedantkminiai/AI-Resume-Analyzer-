@@ -23,7 +23,7 @@ export default function Home() {
   }, [auth.isAuthenticated])
 
 
-  return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+  return <main className="bg-[url('https://www.rawpixel.com/search/website%20background')] bg-cover">
     <Navbar />
 
     <section className={"main-section"}>
